@@ -29,7 +29,7 @@ const  Home = () => {
                 item.width += 20
             }
         });
-        setEmojiList(emojiList)
+        setEmojiList([...emojiList])
     }
 
     const handleMouseLeave = (id: number) => {
@@ -38,7 +38,7 @@ const  Home = () => {
                 item.width = 80
             }
         });
-        setEmojiList(emojiList)
+        setEmojiList([...emojiList])
     }
 
     const handleEmojiClick = (id: number) => {
