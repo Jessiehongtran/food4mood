@@ -15,6 +15,26 @@ export const foods = [
         mood: 3,
     },
     {
+        image: "https://res.cloudinary.com/dfulxq7so/image/upload/v1576022216/easy-pasta-skillet_nho2wo.jpg",
+        caption: "Something easy for a challenge.",
+        mood: 3,
+    },
+    {
+        image: "https://res.cloudinary.com/dfulxq7so/image/upload/v1576022216/easy-pasta-skillet_nho2wo.jpg",
+        caption: "Something easy for a challenge.",
+        mood: 3,
+    },
+    {
+        image: "https://res.cloudinary.com/dfulxq7so/image/upload/v1576022216/easy-pasta-skillet_nho2wo.jpg",
+        caption: "Something easy for a challenge.",
+        mood: 3,
+    },
+    {
+        image: "https://res.cloudinary.com/dfulxq7so/image/upload/v1576022216/easy-pasta-skillet_nho2wo.jpg",
+        caption: "Something easy for a challenge.",
+        mood: 3,
+    },
+    {
         image: "https://res.cloudinary.com/dfulxq7so/image/upload/v1576022274/image-20141219-31049-ze9ewz_rohttf.jpg",
         caption: "Something icy to calm the heat.",
         mood: 4,
