@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import { emoji } from '../data/emoji';
+import { useNavigate } from 'react-router-dom';
 
 const Menu = () => {
 
     const [emojiList, setEmojiList] = useState(emoji)
+
+    const navigate = useNavigate()
 
     const showEmoji = (id: number) => {
         const copiedEmojiList = emojiList
@@ -17,7 +20,9 @@ const Menu = () => {
         setEmojiList([...copiedEmojiList])
     }
 
-    console.log('out', emojiList)
+    const showFoods = (id: number) => {
+        navigate(`/foods/${id}`)
+    }
 
 
     return (
@@ -28,6 +33,7 @@ const Menu = () => {
                     src={each.image} 
                     onMouseOver={() => showEmoji(each.id)}
                     onMouseLeave={() => hideEmoji(each.id)}
+                    onClick={() => showFoods(each.id)}
                     style={{ width: '50px', margin: '5px', backgroundColor: '#F6F5F5', borderRadius: '50%' }} 
                 />
                 {each.show? 
