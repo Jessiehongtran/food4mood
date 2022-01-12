@@ -9,7 +9,7 @@ const NavBar = () => {
             <div style={{ width: '80%', display: 'flex', justifyContent: 'space-between'}}>
                 <div className="logo">
                     <h1 style={{ color: 'turquoise', marginLeft: '-10px' }}>FOOD4MOOD</h1>
-                    <p style={{ marginLeft: '20px', marginTop: '-10px' }}>Share your mood to find your food.</p>
+                    <p style={{ marginLeft: '20px', marginTop: '-20px', marginBottom: '20px' }}>Share your mood to find your food.</p>
                 </div>
                 <div className="nav" style={{ display: 'flex', marginTop: '30px', marginRight: '20px' }}>
                     <Link  to="/" style={{ textDecoration: 'none', marginLeft: '20px', fontSize: '22px', color: '#000' }} >

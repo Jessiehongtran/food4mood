@@ -1,12 +1,22 @@
 import { foods } from '../data/foods';
 import { useParams } from 'react-router';
 import '../styles/foodDetail.css'
+import { useState } from 'react';
+import TipInput from '../components/tip';
 
 const FoodDetail = () => {
+    const [ shareTip, setShareTip ] = useState(false)
+
+    const [ tips, setTips ] = useState([])
 
     const { id } = useParams()
 
     const foodToDisplay = foods.filter(food => food.id === parseInt(id!))[0]
+
+    const functions = {
+        setShareFunc: setShareTip,
+        setTipsFunc: setTips
+    }
 
     return (
         <div className="container" style={{ display: 'flex', justifyContent: 'center', width: '100%', padding: '5% 0'}}>
@@ -18,8 +28,8 @@ const FoodDetail = () => {
                     <div className="food-picture" style={{  marginRight: '80px', width: '100%', maxWidth: '400px'}}>
                         <img src={foodToDisplay.image} style={{ width: '100%'}} />
                     </div>
-                    <div className="content" style={{ color: '#636060', lineHeight: '32px' }}>
-                        <div className="ingredients" style={{ textAlign: 'left' }}>
+                    <div className="content" style={{ color: '#636060', lineHeight: '32px', display: 'flex', flexDirection: 'column', alignItems: 'left' }}>
+                        <div className="session" style={{ textAlign: 'left' }}>
                             <div className="title" style={{ fontSize: '24px', color: '#424141'}}>
                                 Ingredients
                             </div>
@@ -27,7 +37,7 @@ const FoodDetail = () => {
                                 {foodToDisplay.ingredients.map(each => <><label><input type="radio"  style={{borderRadius: 0, width: '16px', height: '16px', boxSizing: 'border-box', appearance: 'none', outline: '1px solid #333', marginRight: '10px' }} />{each}</label><br/></>)}
                             </ul>
                         </div>
-                        <div className="make" style={{ marginTop: '30px', textAlign: 'left' }}>
+                        <div className="session" style={{ marginTop: '30px', textAlign: 'left' }}>
                             <div className="title" style={{ fontSize: '24px', color: '#424141'}}>
                                 How to make
                             </div>
@@ -35,7 +45,19 @@ const FoodDetail = () => {
                                 {foodToDisplay.instructions.map(each => <li>{each}</li>)}
                             </ul>
                         </div>
+                        <div className="session" style={{ marginTop: '30px', textAlign: 'left' }}>
+                            <div className="title" style={{ fontSize: '24px', color: '#424141'}}>
+                                Tips by viewers
+                            </div>
+                            <ul className="make-list">
+                                {tips.map(each => <li>{each}</li>)}
+                            </ul>
+                        </div>
+                        {!shareTip
+                        ? <button onClick={() => setShareTip(true)} style={{ padding: '12px 30px', borderRadius: '8px', maxWidth: '150px', backgroundColor: '#FFE62D'}}>Share tips</button>
+                        : <TipInput {...functions} tips={tips} />}
                     </div>
+                    
                 </div>
             </div>
         </div>
