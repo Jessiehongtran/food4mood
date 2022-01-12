@@ -15,25 +15,25 @@ const FoodDetail = () => {
                     {foodToDisplay.name}
                 </div>
                 <div className="food-content" style={{ display: 'flex' }}>
-                    <div className="food-picture" style={{  marginRight: '80px', width: '100%'}}>
-                        <img src={foodToDisplay.image} />
+                    <div className="food-picture" style={{  marginRight: '80px', width: '100%', maxWidth: '400px'}}>
+                        <img src={foodToDisplay.image} style={{ width: '100%'}} />
                     </div>
                     <div className="content" style={{ color: '#636060', lineHeight: '32px' }}>
                         <div className="ingredients" style={{ textAlign: 'left' }}>
                             <div className="title" style={{ fontSize: '24px', color: '#424141'}}>
                                 Ingredients
                             </div>
-                            <div className="ingredient-list">
+                            <ul className="ingredient-list">
                                 {foodToDisplay.ingredients.map(each => <><label><input type="radio"  style={{borderRadius: 0, width: '16px', height: '16px', boxSizing: 'border-box', appearance: 'none', outline: '1px solid #333', marginRight: '10px' }} />{each}</label><br/></>)}
-                            </div>
+                            </ul>
                         </div>
                         <div className="make" style={{ marginTop: '30px', textAlign: 'left' }}>
                             <div className="title" style={{ fontSize: '24px', color: '#424141'}}>
                                 How to make
                             </div>
-                            <div className="make-list">
-                                {foodToDisplay.instructions.map(each => <div><div>{each}</div></div>)}
-                            </div>
+                            <ul className="make-list">
+                                {foodToDisplay.instructions.map(each => <li>{each}</li>)}
+                            </ul>
                         </div>
                     </div>
                 </div>
