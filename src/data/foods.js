@@ -20,6 +20,7 @@ export const foods = [
             "In a large bowl, cream together margarine and sugar until smooth. Beat in eggs one at a time, then stir in the vanilla. Combine flour, cocoa, baking soda, and salt; stir into the creamed mixture until just blended. Mix in walnuts. Drop by spoonfuls onto ungreased cookie sheets.",
             "Bake for 8 to 10 minutes in the preheated oven. Cool for a couple of minutes on the cookie sheet before transferring to wire racks to cool completely."
         ],
+        tips: [],
         mood: 1,
     },
     {
@@ -43,6 +44,7 @@ export const foods = [
             "Season to taste with salt and pepper, stir through cream (never boil soup after adding soup, cream will split).",
             "Ladle soup into bowls, drizzle over a bit of cream, sprinkle with pepper and parsley if desired. Serve with crusty bread!"
         ],
+        tips: [],
         mood: 2,
     },
     {
@@ -79,6 +81,7 @@ export const foods = [
             "Top with the cheddar and mozzarella, and place in the oven for 20-25 minutes, until the cheese is golden brown.",
             "Take out of the oven and top with parsley before serving."
         ],
+        tips: [],
         mood: 3,
     },
     {
@@ -98,6 +101,7 @@ export const foods = [
             "Cook, undisturbed, until sprouts begin to brown on bottom, and transfer to oven. Roast, shaking pan every 5 minutes, until sprouts are quite brown and tender, about 10 to 20 minutes.",
             "Taste, and add more salt and pepper if necessary. Stir in balsamic vinegar, and serve hot or warm."
         ],
+        tips: [],
         mood: 3,
     },
     {
@@ -123,6 +127,7 @@ export const foods = [
             "Return skillet to high heat and add 2 tablespoons oil, the carrots, and whites of the green onions. Cook until lightly golden, about 2 minutes. Add garlic and ginger and cook, stirring, until fragrant, 1 minute.",
             "Add rice, peas, and cooked eggs to skillet. Pour in soy sauce and cook, stirring until heated through, 1 minute. Season with salt and pepper and stir in the remaining green onions."
         ],
+        tips: [],
         mood: 3,
     },
     {
@@ -148,6 +153,7 @@ export const foods = [
             "Cut 18 squares of baking parchment and put a bun on each. Transfer to a baking tray, cover with a clean tea towel and leave to prove in a warm place for 1 hr 30 mins, or until doubled in size.",
             "Heat a large steamer over a medium-high heat. Steam the buns for 8 mins until puffed up (you’ll need to do this in batches). Prise open each bun and fill with our barbecue pork and pickled carrot & mooli. Eat while they’re still warm."
         ],
+        tips: [],
         mood: 3,
     },
     {
@@ -183,6 +189,7 @@ export const foods = [
             "Working in batches, cook several chicken pieces at a time. Cook for 2 - 3 minutes, turning often until golden brown. Place chicken on a paper-towel-lined plate. Repeat.",
             "Toss chicken with orange sauce. You may reserve some of the sauce to place on rice. Serve it with a sprinkling of green onion and orange zest, if so desired."
         ],
+        tips: [],
         mood: 3,
     },
     {
@@ -204,6 +211,7 @@ export const foods = [
             "Combine sugar, milk, salt, and cocoa powder in a saucepan over medium heat, stirring constantly. Bring to a simmer. Place the egg yolks into a small bowl. Gradually stir in about 1/2 cup of the hot liquid. and return to the saucepan. Heat until thickened, but do not boil. Remove from the heat, and stir in the chopped chocolate until chocolate is melted. Pour into a chilled bowl, and refrigerate for about two hours until cold, stirring occasionally.",
             "When chocolate mixture has completely cooled, stir in the cream, and vanilla. Pour into an ice cream maker, and freeze according to manufacturer's directions."
         ],
+        tips: [],
         mood: 4,
     },
     {
@@ -247,6 +255,7 @@ export const foods = [
             "In a small bowl, combine the soy sauce, rice vinegar, sesame oil, and pepper flakes and stir to combine. Serve the dumplings immediately with the dipping sauce.",
             "Enjoy!"
         ],
+        tips: [],
         mood: 5,
     },
     {
@@ -285,6 +294,7 @@ export const foods = [
             "Add bean sprouts and remaining shallots/scallions. Toss through for 30 seconds or until the bean sprouts just start to wilt.",
             "Remove from heat and serve immediately."
         ],
+        tips: [],
         mood: 1,
     },
     {
@@ -307,6 +317,7 @@ export const foods = [
             "In large bowl, mix all ingredients. Shape mixture into 24 (1 1/2-inch) meatballs. Place 1 inch apart in pan.",
             "Bake uncovered 18 to 22 minutes or until temperature reaches 160°F and no longer pink in center."
         ],
+        tips: [],
         mood: 2,
     },
     {
@@ -324,6 +335,7 @@ export const foods = [
             "Transfer yogurt to resealable jars; refrigerate, covered, for up to 1 week.",
             "For thicker yogurt: Line a fine-mesh strainer with a double layer of cheesecloth and set over a large bowl. Pour yogurt into strainer and refrigerate until desired thickness is reached, at least 3 hours and up to overnight. Discard any liquid in bowl. Transfer strained yogurt to resealable jars; refrigerate, covered, for up to 1 week."
         ],
+        tips: [],
         mood: 3,
     },
     {
@@ -356,6 +368,7 @@ export const foods = [
             "Whisk in 1/2 tsp salt and 1/8 tsp black pepper, or season to taste.",
             "Rinse, dry and chop or tear the romaine into bite-sized pieces. Place in a large serving bowl and sprinkle generously with shredded parmesan cheese and cooled croutons. Drizzle with caesar dressing and toss gently until lettuce is evenly coated."
         ],
+        tips: [],
         mood: 4,
     }
 ]

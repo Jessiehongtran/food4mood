@@ -7,9 +7,9 @@ import TipInput from '../components/tip';
 const FoodDetail = () => {
     const [ shareTip, setShareTip ] = useState(false)
 
-    const [ tips, setTips ] = useState([])
-
     const { id } = useParams()
+
+    const [ tips, setTips ] = useState(foods[parseInt(id!)].tips)
 
     const foodToDisplay = foods.filter(food => food.id === parseInt(id!))[0]
 
