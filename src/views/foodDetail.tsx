@@ -54,7 +54,7 @@ const FoodDetail = () => {
                             </ul>
                         </div>
                         {!shareTip
-                        ? <button onClick={() => setShareTip(true)} style={{ padding: '12px 30px', borderRadius: '8px', maxWidth: '150px', backgroundColor: '#FFE62D'}}>Share tips</button>
+                        ? <button onClick={() => setShareTip(true)} style={{ fontFamily: 'Marker Felt', cursor: 'pointer', padding: '12px 30px', borderRadius: '8px', maxWidth: '150px', backgroundColor: '#FFE62D'}}>Share tips</button>
                         : <TipInput {...functions} tips={tips} />}
                     </div>
                     
