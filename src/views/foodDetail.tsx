@@ -34,7 +34,7 @@ const FoodDetail = () => {
                                 Ingredients
                             </div>
                             <ul className="ingredient-list">
-                                {foodToDisplay.ingredients.map(each => <><label><input type="radio"  style={{borderRadius: 0, width: '16px', height: '16px', boxSizing: 'border-box', appearance: 'none', outline: '1px solid #333', marginRight: '10px' }} />{each}</label><br/></>)}
+                                {foodToDisplay.ingredients.map(each => <><label><input type="checkbox"  />{each}</label><br/></>)}
                             </ul>
                         </div>
                         <div className="session" style={{ marginTop: '30px', textAlign: 'left' }}>
