@@ -44,12 +44,6 @@ const  Home = () => {
     const handleEmojiClick = (id: number) => {
         
         navigate(`/foods/${id}`)
-        // this.props.history.push({
-        //     pathname: '/foods',
-        //     state: {
-        //         emojiId: id
-        //     }
-        // })
     }
 
 

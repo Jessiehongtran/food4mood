@@ -23,7 +23,7 @@ export default function Foods () {
                     </div>
                     <div style={{ display: 'flex', flexWrap: 'wrap' }}>
                         {foodsToRender.map(food => 
-                            <div style={{ width: '315px', margin: '20px'}}>
+                            <div style={{ width: '315px', margin: '20px', cursor: 'pointer'}}>
                                 <div style={{maxWidth: '315px', maxHeight: '200px', overflow: 'hidden',outline: '1px solid #F0F8FF', outlineOffset: '-10px',  }}>
                                     <img src={food.image} style={{ width: '100%',  verticalAlign: 'center' }} onClick={() => navigate(`/food/detail/${food.id}`)}/>
                                 </div>
