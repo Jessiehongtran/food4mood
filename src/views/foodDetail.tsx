@@ -26,7 +26,7 @@ const FoodDetail = () => {
                 </div>
                 <div className="food-content" style={{ display: 'flex' }}>
                     <div className="food-picture" style={{  marginRight: '80px', width: '100%', maxWidth: '400px'}}>
-                        <img src={foodToDisplay.image} style={{ width: '100%'}} />
+                        <img alt={foodToDisplay.name} src={foodToDisplay.image} style={{ width: '100%'}} />
                     </div>
                     <div className="content" style={{ color: '#636060', lineHeight: '32px', display: 'flex', flexDirection: 'column', alignItems: 'left' }}>
                         <div className="session" style={{ textAlign: 'left' }}>

@@ -30,6 +30,7 @@ const Menu = () => {
             {emoji.map(each => 
             <div style={{ position: 'relative' }}>
                 <img 
+                    alt={each.name}
                     src={each.image} 
                     onMouseOver={() => showEmoji(each.id)}
                     onMouseLeave={() => hideEmoji(each.id)}

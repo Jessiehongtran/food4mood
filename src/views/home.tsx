@@ -56,6 +56,7 @@ const  Home = () => {
                         ? reverseArray(emojiList).map(each => 
                         <div style={{ width: '120px', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                             <img 
+                                alt={each.name}
                                 src={each.image} 
                                 onMouseOver={() => handleMouseOver(each.id)}
                                 onMouseLeave={() => handleMouseLeave(each.id)}

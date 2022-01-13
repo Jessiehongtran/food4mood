@@ -25,11 +25,11 @@ export default function Foods () {
                         {foodsToRender.map(food => 
                             <div style={{ width: '315px', margin: '20px', cursor: 'pointer'}}>
                                 <div style={{maxWidth: '315px', maxHeight: '200px', overflow: 'hidden',outline: '1px solid #F0F8FF', outlineOffset: '-10px',  }}>
-                                    <img src={food.image} style={{ width: '100%',  verticalAlign: 'center' }} onClick={() => navigate(`/food/detail/${food.id}`)}/>
+                                    <img alt={food.name} src={food.image} style={{ width: '100%',  verticalAlign: 'center' }} onClick={() => navigate(`/food/detail/${food.id}`)}/>
                                 </div>
                                 <div style={{ display: 'flex', backgroundColor: 'orange', alignItems: 'center', justifyContent: 'space-between', height: '50px'}}>
                                     <div style={{ backgroundColor: 'red', padding: '8px', height: '100%', boxSizing: 'border-box', display: 'flex', alignItems: 'center' }}>{food.caption}</div>
-                                    <img src={emojiToRender.image} style={{ width: '30px', marginRight: '10px', marginLeft: '10px',  backgroundColor: 'lightgoldenrodyellow', borderRadius: '50%' }} />
+                                    <img alt={emojiToRender.name} src={emojiToRender.image} style={{ width: '30px', marginRight: '10px', marginLeft: '10px',  backgroundColor: 'lightgoldenrodyellow', borderRadius: '50%' }} />
                                 </div>
                             </div>)}
                     </div>
